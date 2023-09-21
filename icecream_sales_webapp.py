@@ -10,8 +10,8 @@ import pickle
 import streamlit as st
 
 
-lr_model = pickle.load(open("C:/Users/TanveerKader/Desktop/New folder/icecream_sale_webapp/icecream_sale_lr_model.sav", 'rb')) 
-xgb_model = pickle.load(open("C:/Users/TanveerKader/Desktop/New folder/icecream_sale_webapp/icecream_sale_xgb_model.sav", 'rb')) 
+lr_model = pickle.load(open("icecream_sale_lr_model.sav", 'rb')) 
+xgb_model = pickle.load(open("icecream_sale_xgb_model.sav", 'rb')) 
 
 def icecream_sale_prediction(input_data):
 
