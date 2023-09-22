@@ -9,9 +9,22 @@ import numpy as np
 import pickle
 import streamlit as st
 
+import os
+
+# Get the directory of the current script
+script_dir = os.path.dirname(__file__)
+
+# Define the relative paths to your model files
+lr_model_path = os.path.join(script_dir, 'icecream_sale_lr_model.sav')
+xgb_model_path = os.path.join(script_dir, 'icecream_sale_xgb_model.sav')
+
+# Load models using relative paths
+lr_model = pickle.load(open(lr_model_path, 'rb'))
+xgb_model = pickle.load(open(xgb_model_path, 'rb'))
+
 # path
-lr_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_lr_model.sav', 'rb')) 
-xgb_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_xgb_model.sav', 'rb')) 
+#lr_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_lr_model.sav', 'rb')) 
+#xgb_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_xgb_model.sav', 'rb')) 
 
 def icecream_sale_prediction(input_data):
 
