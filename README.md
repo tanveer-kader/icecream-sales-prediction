@@ -4,6 +4,19 @@
 
 1. clone this repository
 2. open anaconda navigator
+
+3. do these:
+
+   - click on environments
+   - left click on "the green play button"
+   - click on "open terminal"
+
+4. run this command below: copy the folder path on your machine and replace with "path-on-your-machine"
+
+   - streamlit run "path-on-your-machine/icecream_sales_webapp.py"
+
+5. Your default browser will open up and ready to use the app.
+
 <!-- 3. Launch spyder
 3. on top right side:
 
@@ -20,15 +33,3 @@
    - do this for both models
 
 7. save it -->
-
-8. do these:
-
-   - click on environments
-   - left click on "the green play button"
-   - click on "open terminal"
-
-9. run this command below: copy the folder path on your machine and replace with "path-on-your-machine"
-
-   - streamlit run "path-on-your-machine/icecream_sales_webapp.py"
-
-10. Your default browser will open up and ready to use the app.
