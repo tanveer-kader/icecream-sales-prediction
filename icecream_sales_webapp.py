@@ -8,15 +8,10 @@ Created on Wed Sep 20 22:05:51 2023
 import numpy as np
 import pickle
 import streamlit as st
-import os
 
 
-temp_path = st.secrets["filesystem"]["root"]  # Streamlit's root folder
-abs_path_lr = os.path.join(temp_path, 'icecream_sale_lr_model.sav')
-abs_path_xgb = os.path.join(temp_path, 'icecream_sale_lr_model.sav')
-
-lr_model = pickle.load(open(abs_path_lr, 'rb')) 
-xgb_model = pickle.load(open(abs_path_xgb, 'rb')) 
+lr_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_lr_model.sav', 'rb')) 
+xgb_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_xgb_model.sav', 'rb')) 
 
 def icecream_sale_prediction(input_data):
 
