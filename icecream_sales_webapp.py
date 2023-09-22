@@ -9,7 +9,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-
+# path
 lr_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_lr_model.sav', 'rb')) 
 xgb_model = pickle.load(open('C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sale_xgb_model.sav', 'rb')) 
 
