@@ -66,4 +66,4 @@ if __name__ == "__main__":
     main()
     
     
-# streamlit run "C:/Users/TanveerKader/Desktop/icecream-sales-prediction/icecream_sales_webapp.py"
+# streamlit run "C:/Users/TanveerKader/Desktop/Ml Web app/Uploaded/icecream-sales-prediction/icecream_sales_webapp.py"
